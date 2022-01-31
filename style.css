@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --text-purple: rgb(117, 13, 190); 
+    --gray-color: rgb(241, 241, 241);
+    --light-purple: rgb(207, 177, 230);
+    --icon-gray:rgb(112, 111, 111);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--text-purple) ;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 480px;
+    height: 600px;
+    border-radius: 30px;
+}
+.title-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-purple) ;
+}
+.form-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;   
+}
+i{
+    color: var(--icon-gray);
+}
+input{
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 30px ;
+    border: solid 3px var(--gray-color);
+    width: 300px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.error-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+#warning{
+    color: red;
+    font-size: 12px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    font-family: inherit;
+    color: white;
+    background-color: var(--text-purple);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+#btn:hover{
+    background-color: var(--light-purple) ;
+}
+.social-media-text{
+    font-size: 14px;
+    margin-top: 2rem;
+}
+.social-media{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:300px;
+}
+.social-icon{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px;
+    border-color: var(--icon-gray);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
